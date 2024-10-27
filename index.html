@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Tampilan Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="salsa.jpg" alt="gambar profile" class="profile-img"/>
+    <div class="container">  
+        <h2>About Me</h2>
+        <p>Hello, my name is Salsabila Azzahra. </p>
+        <h2>Project</h2>
+        <ul>
+            <li><a href="project">Project 1 title</a>- Brief description of Project 1.</li>
+            <li><a href="project">Project 2 title</a>- Brief description of Project 2.</li>
+        </ul>
+        <h2>Contact</h2>
+        <p>Email : 2300016084@webmail.uad.ac.id</p>
+        <p>Instagram : <a href="https://www.instagram.com/slsaa_azz?igsh=ankydjN3NjM4djBn&utm_source=qr">@slsaa_azz</a></p>
+    </div>
+
+    <div class="container">
+        <h2>To-Do List</h2>
+        <div class="controls">
+        <input type="text" id="taskInput" placeholder="Tambahkan list baru...">
+        <button id="addTaskBtn">Tambah List</button>
+    </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="controls">
+        <label for="BackgroundColor">Warna Background:</label>
+        <select id="BackgroundColor">
+            <option value="default">Default</option>
+            <option value="white">White</option>
+            <option value="lightblue">lightblue</option>
+            <option value="bisque">Bisque</option>
+            <option value="lightgray">Lightgray</option>
+        </select>
+
+        <label for="fontSize">Ukuran Font:</label>
+        <input type="range" id="fontSize" min="10" max="30" value="16">
+
+        <button id="toggleDarkMode">Aktifkan Mode Gelap</button>
+
+        <label for="FontStyle">Gaya Font:</label>
+        <select id="fontStyle">
+            <option value="Arial, sans-serif">Sans-serif (Arial)</option>
+            <option value="Times New Roman, serif">Serif (Times New Roman)</option>
+            <option value="Verdana, sans-serif">Sans-serif (Verdana)</option>
+            <option value="Georgia, serif">Serif (Georgia)</option>
+        </select>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
